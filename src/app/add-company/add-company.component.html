@@ -1,0 +1,36 @@
+<mat-card>
+    <mat-card-title>
+        Nueva Empresa
+    </mat-card-title>
+
+    <mat-divider></mat-divider>
+
+    <mat-card-content>
+
+        <form [formGroup]="form" (submit)="sendCompany()">
+            <div class form-group>
+                <mat-form-field flex>
+                    <input matInput formControlName="rut" type="text" name="rut" placeholder="Rut">
+                    <mat-hint alig="start"></mat-hint>
+                </mat-form-field>
+                <br>
+                <mat-form-field flex>
+                    <input matInput formControlName="name" type="text" name="nombre" placeholder="Nombre">
+                    <mat-hint alig="start"></mat-hint>
+                </mat-form-field>
+                <br>
+                <mat-form-field flex>
+                    <input matInput formControlName="phone" type="text" name="telefono" placeholder="Teléfono">
+                    <mat-hint alig="start"></mat-hint>
+                </mat-form-field>
+                <br>
+                <mat-form-field flex>
+                    <input matInput formControlName="address" type="text" name="direccion" placeholder="Dirección">
+                    <mat-hint alig="start"></mat-hint>
+                </mat-form-field>
+
+            </div>
+            <button mat-flat-button color="accent">Guardar</button>
+        </form>
+    </mat-card-content>
+</mat-card>
