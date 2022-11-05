@@ -22,7 +22,7 @@ export class AddCompanyComponent implements OnInit {
   ) {}
 
   public sendCompany() {
-    this.service.postCompany('http://52.25.110.73:8000/api/company/',
+    this.service.postCompany('http://54.191.239.230:8000/api/company/',
       {
         rut: this.form.value.rut,
         name: this.form.value.name,

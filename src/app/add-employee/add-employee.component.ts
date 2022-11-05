@@ -20,7 +20,7 @@ export class AddEmployeeComponent implements OnInit {
     private formBuilder: FormBuilder) { }
 
   public sendEmployee() {
-    this.service.postEmployee('http://52.25.110.73:8000/api/employee/',
+    this.service.postEmployee('http://54.191.239.230:8000/api/employee/',
       {
         rut: this.form.value.rut,
         name: this.form.value.name,

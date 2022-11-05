@@ -8,7 +8,7 @@ import { Company, Employee } from 'src/allReport';
 })
 export class ApiService {
 
-  private readonly API = 'http://52.25.110.73:8000/api/';
+  private readonly API = 'http://54.191.239.230:8000/api/';
 
   constructor(private readonly http: HttpClient) {
   }
